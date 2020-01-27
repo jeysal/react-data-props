@@ -1,0 +1,39 @@
+{
+  "name": "react-data-props",
+  "version": "0.1.0",
+  "author": "Tim Seckinger",
+  "license": "MIT",
+  "module": "dist/react-data-props.esm.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint src",
+    "prepare": "tsdx build"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.9.1",
+    "@types/react": "^16.9.19",
+    "fast-check": "^1.21.0",
+    "husky": "^4.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "tsdx": "^0.12.3",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint src"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}
