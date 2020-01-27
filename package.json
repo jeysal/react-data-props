@@ -1,6 +1,6 @@
 {
   "name": "react-data-props",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Tim Seckinger",
   "license": "MIT",
   "module": "dist/react-data-props.esm.js",
