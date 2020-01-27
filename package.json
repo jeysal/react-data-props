@@ -16,6 +16,9 @@
     "lint": "tsdx lint src",
     "prepare": "tsdx build"
   },
+  "dependencies": {
+    "core-js-pure": "^3.6.4"
+  },
   "devDependencies": {
     "@types/jest": "^24.9.1",
     "@types/react": "^16.9.19",
