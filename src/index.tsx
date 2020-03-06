@@ -3,12 +3,13 @@ export interface RestProps {
 }
 
 import fromEntries from 'core-js-pure/features/object/from-entries';
+import startsWith from 'core-js-pure/features/string/virtual/starts-with';
 
 const dataProps = (props: RestProps): RestProps =>
   fromEntries(
     Object.entries(props).filter(([name, value]) => {
       // don't include non-data attributes
-      if (!name.startsWith('data-')) {
+      if (!startsWith.call(name, 'data-')) {
         return false;
       }
 
